@@ -35,7 +35,10 @@ body::before {
 }
 
 .logo-container {
-  flex-shrink: 0;
+  position: absolute; /* Position the logo absolutely to the top-left */
+  top: 20px;
+  left: 20px;
+  z-index: 10; /* Ensure it stays on top of other elements */
 }
 
 .logo {
