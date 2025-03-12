@@ -109,8 +109,8 @@ h2 {
 main {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Aligns content to the left */
-    margin-left: 10%; /* Adjust as needed to shift slightly left */
+    align-items: center; /* Center content */
+    margin-left: -5%; /* Slight left shift */
 }
 
 
@@ -121,7 +121,7 @@ form {
     border: 2px solid #666;
     width: 100%;
     max-width: 400px;
-    margin-left: -5px;
+    margin-left: -30px; /* Move slightly to the left */
 }
 
 label {
