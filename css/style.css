@@ -11,8 +11,9 @@ body {
   box-sizing: border-box;
   position: relative; /* Needed for overlay */
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Vertically center the content */
+  flex-direction: column; /* Align elements in a column */
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center; /* Center content horizontally */
   margin: 0;
   overflow: hidden; /* Prevent any overflow from the body */
 }
@@ -201,6 +202,7 @@ button:hover {
   font-size: 16px;
 }
 
+/* Updated footer */
 footer {
   text-align: center;
   font-size: 14px;
@@ -208,9 +210,9 @@ footer {
   padding: 10px;
   margin-top: 30px;
   border-top: 1px solid #b89b5e;
-  position: absolute;
-  bottom: 0;
+  position: relative; /* Change to relative for normal document flow */
   width: 100%;
+  margin-top: auto; /* Push footer to the bottom */
 }
 
 .Quran-verse {
