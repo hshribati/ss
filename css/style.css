@@ -135,7 +135,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content */
-    margin-left: -15%; /* Slight left shift */
+    margin-left: -12%; /* Slight left shift */
 }
 
 form {
