@@ -125,6 +125,8 @@ h2 {
     margin-bottom: 15px;
     word-wrap: break-word; /* Ensures text wraps within the form container */
     overflow-wrap: break-word; /* Another property for the same effect */
+    word-break: break-word; /* Force word breaking in case of long words */
+    padding: 0 10px; /* Add some padding inside h2 to prevent text spilling */
 }
 
 main {
@@ -142,6 +144,7 @@ form {
     width: 100%;
     max-width: 400px;
     margin-left: 35px; /* Move slightly to the left */
+    box-sizing: border-box; /* Ensure padding and border don't overflow the form */
 }
 
 label {
