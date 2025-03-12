@@ -71,11 +71,28 @@ body::before {
 
   .container {
     flex-direction: column; 
-    gap: 10px; 
+    gap: 20px; /* Increased gap for better spacing */
   }
 
   .logo {
     width: 80px; 
+  }
+
+  .form-container {
+    margin-left: 0; /* Remove left margin to center form on small screens */
+    margin-top: 20px; /* Add some space from the top */
+    max-width: 100%; /* Make sure the form takes full width */
+  }
+
+  form {
+    margin-left: 0; /* Center the form */
+    max-width: 90%; /* Ensure it fits on smaller screens */
+    width: 100%;
+  }
+
+  main {
+    margin-left: 0; /* Ensure content is aligned without shifting left */
+    align-items: center; /* Center form and content */
   }
 }
 
@@ -88,6 +105,8 @@ body::before {
   .logo {
     width: 200px; 
   }
+}
+
 header {
     text-align: center;
     margin-bottom: 10px; /* Space between header and form */
@@ -112,7 +131,6 @@ main {
     align-items: center; /* Center content */
     margin-left: 20%; /* Slight left shift */
 }
-
 
 form {
     background: rgba(255, 255, 255, 0.15);
