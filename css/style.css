@@ -132,21 +132,21 @@ h2 {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 0; /* Ensure no left shift */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    margin-left: 20%; /* Slight left shift */
 }
 
 form {
-  background: rgba(255, 255, 255, 0.15);
-  padding: 20px;
-  border-radius: 10px;
-  border: 2px solid #666;
-  width: 100%;
-  max-width: 400px;
-  margin-left: 35px;
-  box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #666;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 35px; /* Move slightly to the left */
+    box-sizing: border-box; /* Ensure padding and border don't overflow the form */
 }
 
 label {
