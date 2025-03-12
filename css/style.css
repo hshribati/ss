@@ -3,15 +3,18 @@
 body {
   background: url('../images/nn.jpeg') no-repeat center center fixed;
   background-size: cover; /* Ensures the image covers the entire background */
-  color: #fff; /* Fix placement */
+  color: #fff;
   font-family: 'Merriweather', serif;
   text-align: center;
   padding: 20px;
   min-height: 100vh; 
   box-sizing: border-box;
   position: relative; /* Needed for overlay */
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Vertically center the content */
+  margin: 0;
 }
-
 
 body::before {
   content: "";
@@ -44,6 +47,7 @@ body::before {
 .form-container {
   max-width: 400px;
   width: 100%;
+  margin-left: 50px; /* Move form more to the left */
 }
 
 .top-right-image {
@@ -161,4 +165,3 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
