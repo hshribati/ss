@@ -123,10 +123,11 @@ h2 {
     font-size: 18px;
     color: #F5F5DC;
     margin-bottom: 15px;
-    word-wrap: break-word; /* Ensures text wraps within the form container */
-    overflow-wrap: break-word; /* Another property for the same effect */
-    word-break: break-word; /* Force word breaking in case of long words */
-    padding: 0 10px; /* Add some padding inside h2 to prevent text spilling */
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Ensure long words break */
+    overflow-wrap: break-word; /* Another property to force breaking */
+    word-break: break-word; /* Make sure text breaks correctly */
+    padding: 0 10px; /* Padding inside the h2 to avoid touching the form edges */
 }
 
 main {
@@ -144,7 +145,7 @@ form {
     width: 100%;
     max-width: 400px;
     margin-left: 35px; /* Move slightly to the left */
-    box-sizing: border-box; /* Ensure padding and border don't overflow the form */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 label {
