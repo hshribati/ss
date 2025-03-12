@@ -3,9 +3,7 @@
 body {
   background: url('../images/nn.jpeg') no-repeat center center fixed;
   background-size: cover; /* Ensures the image covers the entire background */
-}
-
-  color: #fff;
+  color: #fff; /* Fix placement */
   font-family: 'Merriweather', serif;
   text-align: center;
   padding: 20px;
@@ -13,6 +11,7 @@ body {
   box-sizing: border-box;
   position: relative; /* Needed for overlay */
 }
+
 
 body::before {
   content: "";
