@@ -123,6 +123,8 @@ h2 {
     font-size: 18px;
     color: #F5F5DC;
     margin-bottom: 15px;
+    word-wrap: break-word; /* Ensures text wraps within the form container */
+    overflow-wrap: break-word; /* Another property for the same effect */
 }
 
 main {
