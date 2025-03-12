@@ -175,3 +175,12 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.Quran-verse {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    color: #DAA520; /* Gold color */
+    margin-top: 20px; /* Space between form and verse */
+    max-width: 600px;
+}
