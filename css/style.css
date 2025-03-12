@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 body {
-  background: url('css/images/nn.jpeg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../images/nn.jpeg') no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the entire background */
+}
+
   color: #fff;
   font-family: 'Merriweather', serif;
   text-align: center;
