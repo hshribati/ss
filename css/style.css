@@ -110,7 +110,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content */
-    margin-left: -5%; /* Slight left shift */
+    margin-left: 5%; /* Slight left shift */
 }
 
 
@@ -121,7 +121,7 @@ form {
     border: 2px solid #666;
     width: 100%;
     max-width: 400px;
-    margin-left: -30px; /* Move slightly to the left */
+    margin-left: 10px; /* Move slightly to the left */
 }
 
 label {
