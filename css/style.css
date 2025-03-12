@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+  background: linear-gradient(to bottom, #006400, #003300); /* Only the gradient */
+  color: #fff;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh; 
+  box-sizing: border-box; 
+}
+
+
+.container {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px; /* Adds space between logo and form */
+}
+
+.logo-container {
+  flex-shrink: 0; /* Prevents the logo from shrinking */
+}
+
+.logo {
+  width: 180px; /* Adjust the size of the logo */
+  height: auto;
+  display: block;
+}
+
+.form-container {
+  max-width: 400px;
+  width: 100%;
+}
+
+.top-right-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 180px; 
+  height: auto; 
+  max-width: 90%; 
+  z-index: 100;
+}
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .top-right-image {
+    width: 120px; 
+  }
+
+  .container {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .logo {
+    width: 80px; 
+  }
+}
+
+/* Media query for larger screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    gap: 30px; /* More space between logo and form */
+  }
+
+  .logo {
+    width: 200px; 
+  }
+}
+
+h1 {
+  font-family: 'Amiri', serif;
+  font-size: 28px;
+  color: #DAA520;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #F5F5DC;
+  margin-bottom: 20px;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #666; /* Solid black border */
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 600;
+  color: #DAA520;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background: #DAA520;
+  color: #004d00;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #b89b5e; /* A darker gold or gray */
+  box-shadow: none; /* Removes the glowing effect */
+}
+
+#confirmation-message {
+  display: none; /* Initially hidden */
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(218, 165, 32, 0.2); /* Light gold background */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center; /* Center-aligns the footer text */
+  font-size: 14px;
+  color: #b89b5e; /* Gold text */
+  padding: 10px;
+  margin-top: 30px;
+  border-top: 1px solid #b89b5e; /* Thin gold line at the top */
+}

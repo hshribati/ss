@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qur'an Class Sign-Up</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<img src="images/alh.png" alt="Alhamdulillah" class="top-right-image">
+
+  <div class="logo-container">
+    <img src="images/ram.png" alt="Quran Logo" class="logo">
+  </div>
+  
+  <header>
+    <h1>بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h1>
+    <h2>Join Our Qur'an Class & Strengthen Your Connection with Allah</h2>
+  </header>
+  
+  <main>
+    <form id="signup-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+      <label for="class-type">Class Type:</label>
+      <select id="class-type" name="class-type">
+        <option value="beginners">Beginners</option>
+        <option value="tajweed">Tajweed</option>
+        <option value="hifz">Hifz</option>
+      </select>
+      
+      <button type="submit">Register Now</button>
+    </form>
+    
+     <p id="confirmation-message"></p>
+
+  </main>
+  
+  <p class="Quran-verse">"And We have certainly made the Qur’an easy for remembrance, so is there any who will remember?" (Quran 54:17)</p>
+
+  <footer>
+    <p>"The best among you are those who learn the Qur’an and teach it." (Bukhari)</p>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
