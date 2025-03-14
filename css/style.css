@@ -2,30 +2,20 @@
 
 body {
   background: url('../images/nn.jpeg') no-repeat center center fixed;
-  background-size: cover; /* Ensures the image covers the entire background */
-  color:  #f8f8f8;
+  background-size: cover;
+  color: #f8f8f8;
   font-family: 'Merriweather', serif;
   text-align: center;
   padding: 20px;
-  min-height: 100vh; /* Ensures the body takes up full height of viewport */
+  min-height: 100vh;
   box-sizing: border-box;
-  position: relative; /* Needed for overlay */
+  position: relative;
   display: flex;
-  flex-direction: column; /* Ensure the body content stacks vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  overflow: hidden; /* Prevent any overflow from the body */
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  overflow: hidden;
 }
 
 .container {
@@ -33,14 +23,14 @@ body::before {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+  flex-wrap: wrap;
 }
 
 .logo-container {
-  position: absolute; /* Position the logo absolutely to the top-left */
+  position: absolute;
   top: 20px;
   left: 20px;
-  z-index: 10; /* Ensure it stays on top of other elements */
+  z-index: 10;
 }
 
 .logo {
@@ -52,7 +42,7 @@ body::before {
 .form-container {
   max-width: 400px;
   width: 100%;
-  margin-top: 30px; /* Ensure the form is below other elements */
+  margin-top: 30px;
 }
 
 .top-right-image {
@@ -65,61 +55,6 @@ body::before {
   z-index: 100;
 }
 
-/* Media query for smaller screens (max-width: 768px) */
-@media (max-width: 768px) {
-  body {
-    flex-direction: column; /* Stack elements on top of each other */
-    justify-content: flex-start; /* Align content at the top */
-    align-items: center; /* Ensure everything is centered horizontally */
-  }
-
-  .top-right-image {
-    width: 120px; /* Resize top-right image for smaller screens */
-  }
-
-  .container {
-    flex-direction: column;
-    gap: 20px; /* Increased gap for better spacing */
-  }
-
-  .logo {
-    width: 80px; /* Resize logo for smaller screens */
-  }
-
-  .form-container {
-    margin-left: 0;
-    margin-top: 20px; /* Provide some spacing above the form */
-    max-width: 100%;
-  }
-
-  form {
-    margin-left: 0;
-    max-width: 90%;
-    width: 100%; /* Ensure form takes up full width on small screens */
-  }
-
-  main {
-    margin-left: 0; /* Ensure no left margin */
-    align-items: center;
-  }
-
-  .form-container {
-    margin-top: 20px;
-    width: 100%; /* Ensure the form takes full width */
-  }
-}
-
-/* Media query for larger screens (min-width: 1024px) */
-@media (min-width: 1024px) {
-  .container {
-    gap: 30px;
-  }
-
-  .logo {
-    width: 200px;
-  }
-}
-
 header {
   text-align: center;
   margin-bottom: 10px;
@@ -129,24 +64,19 @@ h1 {
   font-family: 'Amiri', serif;
   font-size: 28px;
   color: #DAA520;
-  margin-bottom: 5px;
 }
 
 h2 {
   font-size: 18px;
   color: #F5F5DC;
   margin-bottom: 15px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  padding: 0 10px;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content */
-  margin-left: -12%; /* Slight left shift */
+  align-items: center;
+  margin-left: -12%;
 }
 
 form {
@@ -156,51 +86,6 @@ form {
   border: 2px solid #FFD700;
   width: 100%;
   max-width: 400px;
-  margin-left: 35px; /* Move slightly to the left */
-  box-sizing: border-box; /* Ensure padding and border don't overflow the form */
-}
-
-label {
-  display: block;
-  margin: 10px 0 5px;
-  font-weight: 600;
-  color: #DAA520;
-}
-
-input, select {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-button {
-  background: #DAA520;
-  color: #004d00;
-  font-size: 18px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  margin-top: 15px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #b89b5e;
-  box-shadow: none;
-}
-
-#confirmation-message {
-  display: none;
-  color: green;
-  font-weight: bold;
-  margin-top: 20px;
-  padding: 10px;
-  background: rgba(218, 165, 32, 0.2);
-  border-radius: 5px;
-  font-size: 16px;
 }
 
 footer {
@@ -224,13 +109,12 @@ footer {
   max-width: 600px;
 }
 
-
-/* Slider controls */
+/* Slider Styles */
 #slider-container {
   position: relative;
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto;
   overflow: hidden;
 }
 
@@ -283,4 +167,3 @@ button.next-btn {
 .dot.active {
   background-color: #717171;
 }
-
