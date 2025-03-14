@@ -224,63 +224,63 @@ footer {
   max-width: 600px;
 }
 
-/* Slider container */
-.slider {
+
+/* Slider controls */
+#slider-container {
   position: relative;
   width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
+  max-width: 800px;
+  margin: 0 auto;
   overflow: hidden;
-  border-radius: 10px;
 }
 
-/* Slider images */
-.slider img {
-  width: 100%;
-  height: auto;
-  display: block;
+#slider-wrapper {
+  display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
-/* Slide navigation arrows */
-.slider .prev, .slider .next {
-  position: absolute;
-  top: 50%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 10;
-  transform: translateY(-50%);
+.slide {
+  width: 100%;
+  height: auto;
 }
 
-.slider .prev {
+button.prev-btn, button.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev-btn {
   left: 10px;
 }
 
-.slider .next {
+button.next-btn {
   right: 10px;
 }
 
-/* Dot navigation */
-.dots-container {
+.dot-container {
   text-align: center;
-  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
 }
 
-.dots-container .dot {
+.dot {
   height: 15px;
   width: 15px;
   margin: 0 5px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-.dots-container .active {
+.dot.active {
   background-color: #717171;
 }
+
